@@ -17,35 +17,68 @@
           <!-- Card body -->
           <div class="card-body p-6">
             <div class="mb-4">
-              <a href="../index.html"><img src="../assets/images/brand/logo/logo-primary.svg" class="mb-2" alt=""></a>
-              <p class="mb-6">Please enter your user information.</p>
-
+              <h2 class="display-6 fw-bold text-center m-5">NUEVO USUARIO</h2>
             </div>
             <!-- Form -->
             <form>
+              <!-- Document type -->
+              <div class="mb-5">
+                <label for="documenttype" class="form-label">Tipo de documento</label>
+                <select type="email" id="email" class="form-control" name="email" required="">
+                  <option disabled selected>Selecciona una opción</option>
+                  <option value="cedulaciudadania">Cédula de Ciudadanía</option>
+                  <option value="cedulaextranjeria">Cédula de Extranjería</option>
+                  <option value="tarjetaidentidad">Tarjeta de Identidad</option>
+                  <option value="nit">NIT</option>
+                </select>
+              </div>
+             <!-- Document ID  -->
+             <div class="mb-5">
+              <label for="document" class="form-label">Número Documento</label>
+              <input id="document" type="number" id="document" class="form-control" name="username" placeholder="Número de documento aquí" required="">
+            </div>
               <!-- Username -->
-              <div class="mb-3">
-                <label for="username" class="form-label">User Name</label>
-                <input type="text" id="username" class="form-control" name="username" placeholder="User Name" required="">
+              <div class="mb-5">
+                <label for="username" class="form-label">Nombre Completo</label>
+                <input type="text" id="username" class="form-control" name="username" placeholder="Nombre completo aquí" required="">
+              </div>
+              <!-- Gender -->
+              <div class="mb-5">
+                <label for="gender" class="form-label">Género</label>
+                <select type="email" id="gender" class="form-control" name="email" required="">
+                  <option disabled selected>Selecciona una opción</option>
+                  <option value="cedulaciudadania">Masculino</option>
+                  <option value="cedulaextranjeria">Femenino</option>
+                  <option value="tarjetaidentidad">No Aplica</option>
+                </select>
               </div>
               <!-- Email -->
-              <div class="mb-3">
+              <div class="mb-5">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" name="email" placeholder="Email address here" required="">
+                <input type="email" id="email" class="form-control" name="email" placeholder="Correo electrónico aquí" required="">
               </div>
               <!-- Password -->
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" id="password" class="form-control" name="password" placeholder="**************" required="">
+              <div class="mb-5">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" id="password" class="form-control" name="password" placeholder="Contraseña aquí" required="">
               </div>
               <!-- Password -->
-              <div class="mb-3">
-                <label for="confirm-password" class="form-label">Confirm
-                    Password</label>
-                <input type="password" id="confirm-password" class="form-control" name="password" placeholder="**************" required="">
+              <div class="mb-5">
+                <label for="confirm-password" class="form-label">Confirmar Contraseña</label>
+                <input type="password" id="confirm-password" class="form-control" name="password" placeholder="Confirmar contraseña aquí" required="">
               </div>
-              <!-- Checkbox -->
-              <div class="mb-3">
+              <!-- Club -->
+              <div class="mb-5">
+                <label for="club" class="form-label">Club Deportivo</label>
+                <select type="email" id="club" class="form-control" name="email" required="">
+                  <option disabled selected>Selecciona tu club</option>
+                  <option value="Renos">Renos RC</option>
+                  <option value="Bello">Bello RC</option>
+                  <option value="Ejemplo">EjemploRC</option>
+                </select>
+              </div>
+              <!-- Checkbox 
+              <div class="mb-5">
                 <div class="form-check custom-checkbox">
                   <input type="checkbox" class="form-check-input" id="agreeCheck">
                   <label class="form-check-label" for="agreeCheck"><span
@@ -55,23 +88,26 @@
                         <a href="terms-condition-page.html">Privacy Policy.</a></span></label>
                 </div>
               </div>
+              -->
               <div>
                 <!-- Button -->
                 <div class="d-grid">
                   <button type="submit" class="btn btn-primary">
-                    Create Free Account
+                    Registrarme
                   </button>
                 </div>
 
                 <div class="d-md-flex justify-content-between mt-4">
                   <div class="mb-2 mb-md-0">
-                    <a href="sign-up.html" class="fs-5">Already
-                        member? Login </a>
+                    <p text-inherit fs-5>¿Ya tienes una cuenta? 
+                    <a href="sign-in.html" class="fs-5">
+                        Ingresar.</a>
+                    </p>
                   </div>
-                  <div>
+                  <!-- <div>
                     <a href="forget-password.html" class="text-inherit
                         fs-5">Forgot your password?</a>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -85,6 +121,7 @@
 
   <!-- Scripts -->
   @@include("../partials/scripts.html")
+  <script src="form.js"></script>
 </body>
 
 </html>

@@ -45,7 +45,7 @@ npm install
 6. Run gulp in the `dash-ui/` folder to serve the project files using BrowserSync. Running gulp will compile the theme and open `/index.html` in your main browser.
 
 ```
-gulp
+npm run gulp
 ```
 
 7. Generates a /dist directory with all the production files.

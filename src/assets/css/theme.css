@@ -3293,6 +3293,10 @@
   color: #637381 !important;
 }
 
+.text-logo {
+  color: #008036 !important;
+}
+
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important;
 }
@@ -13950,7 +13954,8 @@ h4,
 }
 
 .text-primary-hover:hover {
-  color: #624bff !important;
+  color: #2d8a1c !important;
+  text-decoration: underline;
 }
 
 /*!
@@ -14050,8 +14055,8 @@ h4,
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #624bff;
-  --bs-link-hover-color: #4e3ccc;
+  --bs-link-color: #48bf38;
+  --bs-link-hover-color: #2d8a1c;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fdecce;
 }
@@ -16884,7 +16889,7 @@ progress {
   border: 1px solid #c4cdd5;
   -webkit-appearance: none;
           appearance: none;
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -16901,9 +16906,9 @@ progress {
 .form-control:focus {
   color: #637381;
   background-color: #fff;
-  border-color: #b1a5ff;
+  border-color: #48bf38;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(98, 75, 255, 0.25);
+  box-shadow: 0 0 0 0.30rem rgba(102, 255, 140, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -17151,6 +17156,13 @@ textarea.form-control-lg {
   -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
 }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+  input[type=number] { -moz-appearance:textfield; 
+  }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
 }
@@ -17687,7 +17699,7 @@ textarea.form-control-lg {
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
-  --bs-btn-border-radius: 0.375rem;
+  --bs-btn-border-radius: 0.75rem;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
@@ -17754,19 +17766,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #624bff;
-  --bs-btn-border-color: #624bff;
+  --bs-btn-bg: #48bf38;
+  --bs-btn-border-color: #48bf38;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5340d9;
-  --bs-btn-hover-border-color: #4e3ccc;
+  --bs-btn-hover-bg: #2d8a1c;
+  --bs-btn-hover-border-color: #2d8a1c;
   --bs-btn-focus-shadow-rgb: 122, 102, 255;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4e3ccc;
-  --bs-btn-active-border-color: #4a38bf;
+  --bs-btn-active-bg: #2d8a1c;
+  --bs-btn-active-border-color: #2d8a1c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #624bff;
-  --bs-btn-disabled-border-color: #624bff;
+  --bs-btn-disabled-bg: #2d8a1c;
+  --bs-btn-disabled-border-color: #2d8a1c;
 }
 
 .btn-secondary {
@@ -19545,7 +19557,7 @@ textarea.form-control-lg {
   --bs-card-title-spacer-y: 1.5rem;
   --bs-card-border-width: 1px;
   --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: 0.375rem;
+  --bs-card-border-radius: 0.75rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: 0.5rem;
   --bs-card-cap-padding-y: 0.625rem;
@@ -37232,7 +37244,7 @@ body {
 .card {
   box-shadow: 0px 2px 4px rgba(0, 0, 20, 0.08), 0px 1px 2px rgba(0, 0, 20, 0.08);
   border: 0px;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
 }
 
 .avatar {
