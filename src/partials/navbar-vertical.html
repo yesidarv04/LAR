@@ -14,14 +14,32 @@
 
             </li>
 
-
          <!-- Nav item -->
+         <li class="nav-item">
+            <div class="navbar-heading">Mi información</div>
+        </li>
+
+            <!-- Nav item -->
+            <li class="nav-item">
+                <a class="nav-link has-arrow @@if (context.page ===  'profile') { active }" href="@@webRoot/pages/profile.html">
+                    <i data-feather="home" class="nav-icon icon-xs me-2"></i>  Perfil
+                </a>
+
+            </li>
+
+            <!-- Nav item -->
+            <li class="nav-item">
+                <a class="nav-link has-arrow @@if (context.page === 'settings') { active }" href="@@webRoot/pages/settings.html"">
+                    <i data-feather="home" class="nav-icon icon-xs me-2"></i>  Ajustes
+                </a>
+
+            </li>
+
+         <!-- Pages -->
          <li class="nav-item">
             <div class="navbar-heading">Layouts & Pages</div>
         </li>
 
-
-             <!-- Nav item -->
              <li class="nav-item">
                 <a class="nav-link has-arrow @@if (context.page_group !== 'pages') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navPages" aria-expanded="false" aria-controls="navPages">
                     <i
@@ -33,17 +51,19 @@
 
                 <div id="navPages" class="collapse @@if (context.page_group === 'pages') { show }" data-bs-parent="#sideNavbar">
                     <ul class="nav flex-column">
-                        <li class="nav-item">
+
+                        <!-- <li class="nav-item">
                             <a class="nav-link @@if (context.page === 'profile') { active }" href="@@webRoot/pages/profile.html">
                                 Profile
                 </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+
+                        <!-- <li class="nav-item">
                             <a class="nav-link has-arrow  @@if (context.page === 'settings') { active } "  href="@@webRoot/pages/settings.html" >
                                 Settings
                                 </a>
 
-                        </li>
+                        </li> 
 
 
                         <li class="nav-item">
@@ -65,7 +85,7 @@
                                 404 Error
                 </a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
 
                 </li>

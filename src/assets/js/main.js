@@ -147,3 +147,11 @@ var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
 
 
 })();
+
+var input=  document.getElementById('document');
+var input = document.getElementById('phone');
+var input = document.getElementById('phone2');
+input.addEventListener('input',function(){
+  if (this.value.length > 10) 
+     this.value = this.value.slice(0,10); 
+})
