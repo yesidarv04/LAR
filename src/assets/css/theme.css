@@ -17207,6 +17207,16 @@ textarea.form-control-lg {
 .form-switch {
   padding-left: 2.5em;
 }
+
+.form-switch input[type="checkbox"] {
+  background-color: #9D2C14;
+  transform: scale(1.5);
+}
+
+/* Cuando el switch está activo */
+.form-switch input[type="checkbox"]:checked {
+  background-color: #1F9D14;
+}
 .form-switch .form-check-input {
   width: 2em;
   margin-left: -2.5em;
